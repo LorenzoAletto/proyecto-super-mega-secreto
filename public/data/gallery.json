@@ -1,0 +1,84 @@
+[
+  {
+    "type": "title",
+    "text": "Nuestros comienzos"
+  },
+  {
+    "type": "image",
+    "src": "https://picsum.photos/seed/foto1/800/600",
+    "alt": "Recuerdo 1",
+    "modalTitle": "Título placeholder 1",
+    "modalText": "Descripción placeholder para la imagen 1. Acá iría la info que quieras contar sobre este recuerdo."
+  },
+  {
+    "type": "image",
+    "src": "https://picsum.photos/seed/foto2/800/600",
+    "alt": "Recuerdo 2",
+    "modalTitle": "Título placeholder 2",
+    "modalText": "Descripción placeholder para la imagen 2."
+  },
+  {
+    "type": "video",
+    "src": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "alt": "Video 1",
+    "modalTitle": "Título placeholder video 1",
+    "modalText": "Descripción placeholder para el video 1."
+  },
+  {
+    "type": "image",
+    "src": "https://picsum.photos/seed/foto3/800/600",
+    "alt": "Recuerdo 3",
+    "modalTitle": "Título placeholder 3",
+    "modalText": "Descripción placeholder para la imagen 3."
+  },
+  {
+    "type": "image",
+    "src": "https://picsum.photos/seed/foto4/800/600",
+    "alt": "Recuerdo 4",
+    "modalTitle": "Título placeholder 4",
+    "modalText": "Descripción placeholder para la imagen 4."
+  },
+  {
+    "type": "title",
+    "text": "Momentos especiales"
+  },
+  {
+    "type": "video",
+    "src": "https://www.w3schools.com/html/movie.mp4",
+    "alt": "Video 2",
+    "modalTitle": "Título placeholder video 2",
+    "modalText": "Descripción placeholder para el video 2."
+  },
+  {
+    "type": "image",
+    "src": "https://picsum.photos/seed/foto5/800/600",
+    "alt": "Recuerdo 5",
+    "modalTitle": "Título placeholder 5",
+    "modalText": "Descripción placeholder para la imagen 5."
+  },
+  {
+    "type": "image",
+    "src": "https://picsum.photos/seed/foto6/800/600",
+    "alt": "Recuerdo 6",
+    "modalTitle": "Título placeholder 6",
+    "modalText": "Descripción placeholder para la imagen 6."
+  },
+  {
+    "type": "title",
+    "text": "Lo mejor está por venir"
+  },
+  {
+    "type": "image",
+    "src": "https://picsum.photos/seed/foto7/800/600",
+    "alt": "Recuerdo 7",
+    "modalTitle": "Título placeholder 7",
+    "modalText": "Descripción placeholder para la imagen 7."
+  },
+  {
+    "type": "image",
+    "src": "https://picsum.photos/seed/foto8/800/600",
+    "alt": "Recuerdo 8",
+    "modalTitle": "Título placeholder 8",
+    "modalText": "Descripción placeholder para la imagen 8."
+  }
+]

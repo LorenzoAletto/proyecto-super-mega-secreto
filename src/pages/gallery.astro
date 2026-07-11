@@ -1,0 +1,232 @@
+---
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2 hermosos años</title>
+  </head>
+  <body class="min-h-screen bg-gradient-to-b from-[#0d1f2d] via-[#112a3a] to-[#0a1922]">
+    <!-- Header -->
+    <div class="max-w-2xl mx-auto px-4 pt-16 pb-8">
+      <h1 class="text-4xl md:text-5xl font-bold text-center mb-2" style="color: #40e0d0;">2 hermosos años</h1>
+      <p class="text-center text-[#7fbfbe] text-lg">Nuestros mejores momentos</p>
+    </div>
+
+    <!-- Carousel full-width -->
+    <div class="relative w-full py-8">
+      <div class="max-w-6xl mx-auto px-14 relative">
+        <div id="carousel" class="relative w-full rounded-2xl overflow-hidden shadow-lg" style="background-color: #0f2533;">
+          <div id="carouselTrack" class="relative w-full" style="aspect-ratio: 16/8;"></div>
+          <div id="carouselDots" class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-10"></div>
+        </div>
+
+        <!-- Arrows outside -->
+        <button id="carouselPrev" class="absolute left-0 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full flex items-center justify-center transition cursor-pointer z-10" style="background-color: rgba(13,31,45,0.8); color: #40e0d0; border: 1px solid rgba(64,224,208,0.3);">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>
+        </button>
+        <button id="carouselNext" class="absolute right-0 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full flex items-center justify-center transition cursor-pointer z-10" style="background-color: rgba(13,31,45,0.8); color: #40e0d0; border: 1px solid rgba(64,224,208,0.3);">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="max-w-2xl mx-auto px-4 pb-16">
+      <div id="gallery" class="flex flex-col gap-8"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4">
+      <div id="modalBackdrop" class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+      <div class="relative bg-[#112a3a]/90 backdrop-blur-md border border-[#40e0d0]/30 rounded-2xl shadow-2xl max-w-lg w-full p-8 transform transition-all duration-300 scale-95 opacity-0" id="modalContent">
+        <button id="modalClose" class="absolute top-4 right-4 text-[#7fbfbe] hover:text-white transition cursor-pointer text-2xl leading-none">&times;</button>
+        <h2 id="modalTitle" class="text-2xl font-bold mb-4" style="color: #40e0d0;"></h2>
+        <p id="modalText" class="text-[#b0d4d1] leading-relaxed"></p>
+      </div>
+    </div>
+
+    <script>
+      if (sessionStorage.getItem('autenticado') !== 'true') {
+        window.location.href = '/';
+      }
+
+      const gallery = document.getElementById('gallery') as HTMLElement;
+      const modal = document.getElementById('modal') as HTMLElement;
+      const modalBackdrop = document.getElementById('modalBackdrop') as HTMLElement;
+      const modalContent = document.getElementById('modalContent') as HTMLElement;
+      const modalTitle = document.getElementById('modalTitle') as HTMLElement;
+      const modalText = document.getElementById('modalText') as HTMLElement;
+      const modalClose = document.getElementById('modalClose') as HTMLElement;
+
+      function openModal(title: string, text: string) {
+        modalTitle.textContent = title;
+        modalText.textContent = text;
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        requestAnimationFrame(() => {
+          modalContent.classList.remove('scale-95', 'opacity-0');
+          modalContent.classList.add('scale-100', 'opacity-100');
+        });
+      }
+
+      function closeModal() {
+        modalContent.classList.add('scale-95', 'opacity-0');
+        modalContent.classList.remove('scale-100', 'opacity-100');
+        setTimeout(() => {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }, 200);
+      }
+
+      modalBackdrop.addEventListener('click', closeModal);
+      modalClose.addEventListener('click', closeModal);
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeModal();
+      });
+
+      // Carousel
+      const carouselTrack = document.getElementById('carouselTrack') as HTMLElement;
+      const carouselDots = document.getElementById('carouselDots') as HTMLElement;
+      const carouselPrev = document.getElementById('carouselPrev') as HTMLElement;
+      const carouselNext = document.getElementById('carouselNext') as HTMLElement;
+      let currentSlide = 0;
+      let carouselImages: HTMLImageElement[] = [];
+      let autoplayInterval: ReturnType<typeof setInterval>;
+
+      function buildCarousel(slides: { src: string; alt: string }[]) {
+        slides.forEach((slide, i) => {
+          const img = document.createElement('img');
+          img.src = slide.src;
+          img.alt = slide.alt;
+          img.className = 'absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out';
+          img.style.opacity = i === 0 ? '1' : '0';
+          carouselTrack.appendChild(img);
+          carouselImages.push(img);
+
+          const dot = document.createElement('button');
+          dot.className = 'w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer';
+          dot.style.backgroundColor = i === 0 ? '#40e0d0' : 'rgba(64,224,208,0.3)';
+          dot.addEventListener('click', () => goToSlide(i));
+          carouselDots.appendChild(dot);
+        });
+      }
+
+      function goToSlide(index: number) {
+        carouselImages[currentSlide].style.opacity = '0';
+        (carouselDots.children[currentSlide] as HTMLElement).style.backgroundColor = 'rgba(64,224,208,0.3)';
+
+        currentSlide = index;
+
+        carouselImages[currentSlide].style.opacity = '1';
+        (carouselDots.children[currentSlide] as HTMLElement).style.backgroundColor = '#40e0d0';
+
+        resetAutoplay();
+      }
+
+      function nextSlide() {
+        goToSlide((currentSlide + 1) % carouselImages.length);
+      }
+
+      function prevSlide() {
+        goToSlide((currentSlide - 1 + carouselImages.length) % carouselImages.length);
+      }
+
+      function resetAutoplay() {
+        clearInterval(autoplayInterval);
+        autoplayInterval = setInterval(nextSlide, 4000);
+      }
+
+      carouselNext.addEventListener('click', nextSlide);
+      carouselPrev.addEventListener('click', prevSlide);
+
+      fetch('/data/carousel.json')
+        .then((r) => r.json())
+        .then((slides) => {
+          buildCarousel(slides);
+          resetAutoplay();
+        });
+
+      async function loadGallery() {
+        const res = await fetch('/data/gallery.json');
+        const items = await res.json();
+
+        items.forEach((item: { type: string; src?: string; alt?: string; text?: string; modalTitle?: string; modalText?: string }) => {
+          if (item.type === 'title') {
+            const subtitle = document.createElement('h2');
+            subtitle.className = 'fade-in opacity-0 translate-y-6 transition-all duration-700 text-center text-xl md:text-2xl font-semibold mt-4 mb-2';
+            subtitle.style.color = '#f0b757';
+            subtitle.textContent = item.text || '';
+            gallery.appendChild(subtitle);
+
+            const line = document.createElement('div');
+            line.className = 'fade-in opacity-0 transition-all duration-700 mx-auto w-16 h-0.5 rounded-full mb-4';
+            line.style.backgroundColor = '#40e0d0';
+            gallery.appendChild(line);
+            return;
+          }
+
+          const wrapper = document.createElement('div');
+          wrapper.className = 'fade-in opacity-0 translate-y-6 transition-all duration-700 cursor-pointer group relative overflow-hidden rounded-2xl';
+          wrapper.style.backgroundColor = '#0f2533';
+
+          if (item.type === 'video') {
+            const video = document.createElement('video');
+            video.src = item.src;
+            video.controls = true;
+            video.className = 'w-full rounded-2xl transition-transform duration-500 group-hover:scale-[1.03]';
+            video.muted = true;
+            video.loop = true;
+            wrapper.appendChild(video);
+          } else {
+            const img = document.createElement('img');
+            img.src = item.src;
+            img.alt = item.alt || '';
+            img.loading = 'lazy';
+            img.className = 'w-full rounded-2xl transition-transform duration-500 group-hover:scale-[1.03]';
+            wrapper.appendChild(img);
+          }
+
+          const overlay = document.createElement('div');
+          overlay.className = 'absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl flex items-end p-4';
+          overlay.innerHTML = `<span class="text-white text-sm font-medium">Click para ver más</span>`;
+          wrapper.appendChild(overlay);
+
+          const border = document.createElement('div');
+          border.className = 'absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-[#40e0d0]/40 transition-colors duration-500 pointer-events-none';
+          wrapper.appendChild(border);
+
+          wrapper.addEventListener('click', () => {
+            openModal(item.modalTitle || '', item.modalText || '');
+          });
+
+          gallery.appendChild(wrapper);
+        });
+
+        observeItems();
+      }
+
+      function observeItems() {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.remove('opacity-0', 'translate-y-6');
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+
+        document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+      }
+
+      loadGallery();
+    </script>
+  </body>
+</html>

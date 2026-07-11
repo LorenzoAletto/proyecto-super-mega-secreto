@@ -1,0 +1,22 @@
+[
+  {
+    "src": "https://picsum.photos/seed/carousel1/1200/600",
+    "alt": "Slide 1"
+  },
+  {
+    "src": "https://picsum.photos/seed/carousel2/1200/600",
+    "alt": "Slide 2"
+  },
+  {
+    "src": "https://picsum.photos/seed/carousel3/1200/600",
+    "alt": "Slide 3"
+  },
+  {
+    "src": "https://picsum.photos/seed/carousel4/1200/600",
+    "alt": "Slide 4"
+  },
+  {
+    "src": "https://picsum.photos/seed/carousel5/1200/600",
+    "alt": "Slide 5"
+  }
+]

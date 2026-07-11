@@ -1,11 +1,72 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import '../styles/global.css';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar Sesión</title>
+  </head>
+  <body class="min-h-screen bg-linear-to-br from-[#0d1f2d] via-[#112a3a] to-[#0a1922] flex items-center justify-center">
+    <div class="bg-[#112a3a]/80 backdrop-blur-md border border-[#40e0d0]/20 shadow-2xl rounded-2xl p-8 w-full max-w-sm">
+      <h1 class="text-2xl font-bold text-center mb-6" style="color: #40e0d0;">Bienvenida</h1>
+      <form id="loginForm" class="flex flex-col gap-4">
+        <div>
+          <label for="usuario" class="block text-sm font-medium text-[#7fbfbe] mb-1">Usuario</label>
+          <input
+            type="text"
+            id="usuario"
+            name="usuario"
+            required
+            class="w-full px-4 py-2 rounded-lg border border-[#1e3a4a] bg-[#0d1f2d] text-white placeholder-[#4a7a7a] focus:outline-none focus:ring-2 focus:ring-[#40e0d0]/50 transition"
+          />
+        </div>
+        <div>
+          <label for="contrasena" class="block text-sm font-medium text-[#7fbfbe] mb-1">Contraseña</label>
+          <input
+            type="password"
+            id="contrasena"
+            name="contrasena"
+            required
+            class="w-full px-4 py-2 rounded-lg border border-[#1e3a4a] bg-[#0d1f2d] text-white placeholder-[#4a7a7a] focus:outline-none focus:ring-2 focus:ring-[#40e0d0]/50 transition"
+          />
+        </div>
+        <p id="error" class="text-red-400 text-sm hidden">Usuario o contraseña incorrectos</p>
+        <button
+          type="submit"
+          class="text-white font-semibold py-2 rounded-lg transition cursor-pointer"
+          style="background-color: #40e0d0; color: #0d1f2d;"
+        >
+          Iniciar Sesión
+        </button>
+      </form>
+    </div>
+
+    <script>
+      const USUARIO = 'loloyjuli';
+      const CONTRASENA = '07012024';
+
+      const form = document.getElementById('loginForm') as HTMLFormElement;
+      const error = document.getElementById('error') as HTMLElement;
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const usuario = (document.getElementById('usuario') as HTMLInputElement).value;
+        const contrasena = (document.getElementById('contrasena') as HTMLInputElement).value;
+
+        if (usuario === USUARIO && contrasena === CONTRASENA) {
+          sessionStorage.setItem('autenticado', 'true');
+          window.location.href = '/gallery';
+        } else {
+          error.classList.remove('hidden');
+        }
+      });
+
+      if (sessionStorage.getItem('autenticado') === 'true') {
+        window.location.href = '/gallery';
+      }
+    </script>
+  </body>
+</html>
