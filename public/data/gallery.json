@@ -1,84 +1,431 @@
 [
   {
     "type": "title",
-    "text": "Nuestros comienzos"
+    "text": "El inicio"
   },
   {
     "type": "image",
-    "src": "https://picsum.photos/seed/foto1/800/600",
+    "src": "/fotos/recuerdo1.jpeg",
     "alt": "Recuerdo 1",
-    "modalTitle": "Título placeholder 1",
-    "modalText": "Descripción placeholder para la imagen 1. Acá iría la info que quieras contar sobre este recuerdo."
+    "fecha": "11/12/2023",
+    "modalTitle": "Nuestra primera noche",
+    "modalText": "Por alguna razón esta es la primera foto que tengo de nosotros juntos. Si no me falla la memoria era la primera vez que te quedabas a dormir a casa. Tranquilamente una de las mejores noches de mi vida."
   },
   {
     "type": "image",
-    "src": "https://picsum.photos/seed/foto2/800/600",
+    "src": "/fotos/recuerdo2.jpeg",
     "alt": "Recuerdo 2",
-    "modalTitle": "Título placeholder 2",
-    "modalText": "Descripción placeholder para la imagen 2."
+    "fecha": "11/12/2023",
+    "modalTitle": "",
+    "modalText": "La fecha es la misma, pero creo que agarró mal la información de las fotos el celu (uno hace lo que puede). Ahora no estoy seguro si esto fue antes o después de la foto anterior. Igualmente es una foto muy linda (posta no sé cómo hice para que te guste con esa peluca maaamaa)."
   },
   {
     "type": "video",
-    "src": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "src": "/videos/rvideo1.mp4",
     "alt": "Video 1",
-    "modalTitle": "Título placeholder video 1",
-    "modalText": "Descripción placeholder para el video 1."
+    "fecha": "29/12/2023",
+    "modalTitle": "",
+    "modalText": "Este es de nuestros primeros videos. Posta tenías una maldad al principio. Los cubre almohadas le dan el toque al video ;)."
   },
   {
     "type": "image",
-    "src": "https://picsum.photos/seed/foto3/800/600",
+    "src": "/fotos/recuerdo3.jpeg",
     "alt": "Recuerdo 3",
-    "modalTitle": "Título placeholder 3",
-    "modalText": "Descripción placeholder para la imagen 3."
-  },
-  {
-    "type": "image",
-    "src": "https://picsum.photos/seed/foto4/800/600",
-    "alt": "Recuerdo 4",
-    "modalTitle": "Título placeholder 4",
-    "modalText": "Descripción placeholder para la imagen 4."
-  },
-  {
-    "type": "title",
-    "text": "Momentos especiales"
+    "fecha": "29/12/2023",
+    "modalTitle": "Quedarse en la casa de Juli",
+    "modalText": "Espero no te decepciones de mi pésima memoria (imaginate en el estado que estoy haciendo esto, más dificil acordarme todavía). Esta es la primera vez que entré y me quedé un rato en tu casa. Anda a saber qué hacíamos, estabamos en plena etapa de enamoramiento, seguro que hablabamos de cualquier cosa, probablemente yo te molestaba con cosas de Boca."
   },
   {
     "type": "video",
-    "src": "https://www.w3schools.com/html/movie.mp4",
+    "src": "/videos/rvideo2.mp4",
     "alt": "Video 2",
-    "modalTitle": "Título placeholder video 2",
-    "modalText": "Descripción placeholder para el video 2."
+    "fecha": "29/12/2023",
+    "modalTitle": "",
+    "modalText": "Te encantaba que te grabe todo el tiempo y este video es una clara prueba de eso (Santa Juli de la paciencia que tenías)."
   },
   {
-    "type": "image",
-    "src": "https://picsum.photos/seed/foto5/800/600",
-    "alt": "Recuerdo 5",
-    "modalTitle": "Título placeholder 5",
-    "modalText": "Descripción placeholder para la imagen 5."
+    "type":"image",
+    "src":"/fotos/recuerdo4.jpeg",
+    "alt":"Recuerdo 4",
+    "fecha":"31/12/2023",
+    "modalTitle":"",
+    "modalText":"Claramente las fechas son cuando me pasaste las fotos. Acá podemos ver a un especimen completamente enamorado de su hembra y disfrutando el momento de cortejo. Dato, me acuerdo esas uñas que te re costaba escribir en el celu y parecía que tenías problemitas jsjsjsjs."
   },
   {
-    "type": "image",
-    "src": "https://picsum.photos/seed/foto6/800/600",
-    "alt": "Recuerdo 6",
-    "modalTitle": "Título placeholder 6",
-    "modalText": "Descripción placeholder para la imagen 6."
+    "type":"image",
+    "src":"/fotos/recuerdo5.jpeg",
+    "alt":"Recuerdo 5",
+    "fecha":"31/12/2023",
+    "modalTitle":"",
+    "modalText":"En esta imagen podemos observar como la hembra acepta el cortejo del macho y decide recompensarlo con una tradición cultural humana de afecto."
+  },
+  {
+    "type": "video",
+    "src": "/videos/rvideo3.mp4",
+    "alt": "Video 3",
+    "fecha": "03/01/2024",
+    "modalTitle": "Uno de mis videos favoritos",
+    "modalText": "De acá saqué uno de los mejores stickers/fotos que tengo (que su uso fue prohibido). Pd: el beso del final me derrite de ternura."
+  },
+  {
+    "type": "video",
+    "src": "/videos/rvideo4.mp4",
+    "alt": "Video 4",
+    "fecha": "21/01/2024",
+    "modalTitle": "",
+    "modalText": "Deben ser de tus épocas mas rebeldes estas, el nivel de violencia que manejabas jjajaja. Cindor te debe una banda de plata todavía."
   },
   {
     "type": "title",
-    "text": "Lo mejor está por venir"
+    "text": "¿Tierno o Cringe?"
   },
   {
-    "type": "image",
-    "src": "https://picsum.photos/seed/foto7/800/600",
-    "alt": "Recuerdo 7",
-    "modalTitle": "Título placeholder 7",
-    "modalText": "Descripción placeholder para la imagen 7."
+    "type":"image",
+    "src":"/fotos/recuerdo6.jpeg",
+    "alt":"Recuerdo 6",
+    "fecha":"24/01/2024",
+    "modalTitle":"Tierno",
+    "modalText":"No acepto discusión, esta foto es muy tierna. Estabas vestida re linda y yo tenía un outfit medio de calle."
   },
   {
-    "type": "image",
-    "src": "https://picsum.photos/seed/foto8/800/600",
-    "alt": "Recuerdo 8",
-    "modalTitle": "Título placeholder 8",
-    "modalText": "Descripción placeholder para la imagen 8."
+    "type": "video",
+    "src": "/videos/rvideo5.mp4",
+    "alt": "Video 5",
+    "fecha": "30/01/2024",
+    "modalTitle": "¿Cringe?",
+    "modalText": "Puede ser, pero fue muy divertido. Creo que no lo hicimos nunca más jsjsjs."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo7.jpeg",
+    "alt":"Recuerdo 7",
+    "fecha":"12/02/2024",
+    "modalTitle":"TIERNO",
+    "modalText":"Duermo como un re bebote ahí, soy re tierno mall"
+  },
+  {
+    "type": "video",
+    "src": "/videos/rvideo6.mp4",
+    "alt": "Video 6",
+    "fecha": "15/02/2024",
+    "modalTitle": "Bastante Cringe (pero un toque tierno es)",
+    "modalText": "Gran momento cuando Morte era extremadamente gracioso (vos completamente tentada jajajaj)"
+  },
+  {
+    "type": "video",
+    "src": "/videos/rvideo7.mp4",
+    "alt": "Video 7",
+    "fecha": "22/02/2024",
+    "modalTitle": "CRINGE",
+    "modalText": "Mirá lo que son esos pelos, nada más que decir."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo8.jpeg",
+    "alt":"Recuerdo 8",
+    "fecha":"06/07/2024",
+    "modalTitle":"Bueno",
+    "modalText":"¿De quién habrá sido la maravillosa idea?"
+  },
+  {
+    "type": "video",
+    "src": "/videos/rvideo8.mp4",
+    "alt": "Video 8",
+    "fecha": "21/09/2024",
+    "modalTitle": "Miti miti",
+    "modalText": "Que grandes dotes actorales que tenemos. El 'malísimo' del final es muy gracioso jajajaj."
+  },
+  {
+    "type": "video",
+    "src": "/videos/rvideo9.mp4",
+    "alt": "Video 9",
+    "fecha": "03/12/2024",
+    "modalTitle": "Para mi es tierno",
+    "modalText": "Cuanto tardaba en caer que era un video JAJAJAJAJAJ (mi risa es completamente malvada)."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo9.jpeg",
+    "alt":"Recuerdo 9",
+    "fecha":"14/03/2024",
+    "modalTitle":"Peppa Pig",
+    "modalText":"Juli viendo Peppa Pig."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo10.jpeg",
+    "alt":"Recuerdo 10",
+    "fecha":"05/08/2024",
+    "modalTitle":"Aura",
+    "modalText":"¿O Laura?"
+  },
+  {
+    "type": "video",
+    "src": "/videos/rvideo10.mp4",
+    "alt": "Video 10",
+    "fecha": "18/03/2024",
+    "modalTitle": "Traicionado",
+    "modalText": "No se menciona lo que digo al final..."
+  },
+  {
+    "type": "title",
+    "text": "Algunas fotos y videos que me gustan"
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo11.jpeg",
+    "alt":"Recuerdo 11",
+    "fecha":"04/08/2024",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo12.jpeg",
+    "alt":"Recuerdo 12",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo13.jpeg",
+    "alt":"Recuerdo 13",
+    "fecha":"06/08/2024",
+    "modalTitle":"Juli gamer",
+    "modalText":"Uno de los pocos jueguitos que le metimos bastante. Que lástima no haberlo terminado la verdad"
+  },
+  {
+    "type": "video",
+    "src": "/videos/rvideo11.mp4",
+    "alt": "Video 11",
+    "fecha": "",
+    "modalTitle": "",
+    "modalText": "Aunque a lo mejor nos hubiese llevado un poco mucho (jodaaaa)."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo14.jpeg",
+    "alt":"Recuerdo 14",
+    "fecha":"13/05/2024",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo15.jpeg",
+    "alt":"Recuerdo 15",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":"Una de mis fotos favoritas."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo16.jpeg",
+    "alt":"Recuerdo 16",
+    "fecha":"01/07/2024",
+    "modalTitle":"Galletotas",
+    "modalText":"Que buenas cookies que hicimos, eran gigantes, pero deliciosas."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo17.jpeg",
+    "alt":"Recuerdo 17",
+    "fecha":"26/05/2024",
+    "modalTitle":"Primera rosa",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo18.jpeg",
+    "alt":"Recuerdo 18",
+    "fecha":"11/05/2024",
+    "modalTitle":"",
+    "modalText":"Siempre te despertabas hermosa, pero en esta foto te distinguiste. Encima usando mi buzo, f o t o n."
+  },
+  {
+    "type": "video",
+    "src": "/videos/rvideo12.mp4",
+    "alt": "Video 12",
+    "fecha": "19/04/2025",
+    "modalTitle": "Chocolatada",
+    "modalText": ""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo19.jpeg",
+    "alt":"Recuerdo 19",
+    "fecha":"25/10/2024",
+    "modalTitle":"Los tutores de Blancu",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo20.jpeg",
+    "alt":"Recuerdo 20",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":"Que lindo que la pasamos esas semanas. Arrancaron mal, pero la remontamos."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo21.jpeg",
+    "alt":"Recuerdo 21",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":"¿¿O no??"
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo22.jpeg",
+    "alt":"Recuerdo 22",
+    "fecha":"02/04/2024",
+    "modalTitle":"Amor de ascensor",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo23.jpeg",
+    "alt":"Recuerdo 23",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo24.jpeg",
+    "alt":"Recuerdo 24",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":"No seran los besos más aestetic pero sí los más reales."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo25.jpeg",
+    "alt":"Recuerdo 25",
+    "fecha":"",
+    "modalTitle":"Museo",
+    "modalText":"Gran observador de obras de arte, como los matafuegos en exposición."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo26.jpeg",
+    "alt":"Recuerdo 26",
+    "fecha":"21/09/2024",
+    "modalTitle":"Cuando me puse pintalabios",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo27.jpeg",
+    "alt":"Recuerdo 27",
+    "fecha":"04/10/2024",
+    "modalTitle":"Matecitos y cookies",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo28.jpeg",
+    "alt":"Recuerdo 28",
+    "fecha":"16/12/2024",
+    "modalTitle":"Exceso de facha 😎",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo29.jpeg",
+    "alt":"Recuerdo 29",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo30.jpeg",
+    "alt":"Recuerdo 30",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":"Que hermosa que estabas esa noche."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo31.jpeg",
+    "alt":"Recuerdo 31",
+    "fecha":"26/03/2025",
+    "modalTitle":"SAN LOREEE",
+    "modalText":"VAMOOO JULI CUERVA NOMAAAAAAA"
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo32.jpeg",
+    "alt":"Recuerdo 32",
+    "fecha":"11/02/2025",
+    "modalTitle":"😝",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo33.jpeg",
+    "alt":"Recuerdo 33",
+    "fecha":"26/08/2025",
+    "modalTitle":"Peligro al volante",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo34.jpeg",
+    "alt":"Recuerdo 34",
+    "fecha":"16/06/2025",
+    "modalTitle":"El Pity",
+    "modalText":"Estuvimos horas para escuchar a los imitadores del Pity? Sí. Valió la pena? Obvio."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo35.jpeg",
+    "alt":"Recuerdo 35",
+    "fecha":"30/03/2024",
+    "modalTitle":"¿Cómo le decis que no a esa sonrisa?",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo36.jpeg",
+    "alt":"Recuerdo 36",
+    "fecha":"03/05/2026",
+    "modalTitle":"Heladitoo",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo37.jpeg",
+    "alt":"Recuerdo 37",
+    "fecha":"24/10/2025",
+    "modalTitle":"Juro que no me pega",
+    "modalText":"Le prometo señor oficial, ella no es violenta, me caí de la escalera."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo39.jpeg",
+    "alt":"Recuerdo 39",
+    "fecha":"24/01/2024",
+    "modalTitle":"OJAZO",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo40.jpeg",
+    "alt":"Recuerdo 40",
+    "fecha":"11/01/2025",
+    "modalTitle":"Tengo algo con las fotos movidas",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo38.jpeg",
+    "alt":"Recuerdo 38",
+    "fecha":"28/05/2025",
+    "modalTitle":"La mejor cita romántica de la historia",
+    "modalText":""
   }
+
 ]
