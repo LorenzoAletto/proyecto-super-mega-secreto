@@ -10,7 +10,7 @@ import '../styles/global.css';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juli y Lolo</title>
   </head>
-  <body class="min-h-screen bg-linear-to-b from-[#0d1f2d] via-[#112a3a] to-[#0a1922]">
+  <body class="min-h-screen" style="background-color: #0d1f2d;">
     <!-- Header -->
     <div class="max-w-2xl mx-auto px-4 pt-16 pb-8">
       <h1 class="text-4xl md:text-5xl font-bold text-center mb-2" style="color: #40e0d0;">2 hermosos años</h1>
@@ -37,6 +37,39 @@ import '../styles/global.css';
     <!-- Gallery -->
     <div class="max-w-5xl mx-auto px-4 pb-16">
       <div id="gallery" class="flex flex-col gap-12"></div>
+    </div>
+
+    <!-- Scroll morphing transition -->
+    <div id="morphSection" style="height: 260vh; position: relative;">
+      <div id="morphSticky" style="position: sticky; top: 0; height: 100vh; width: 100%; overflow: hidden;">
+        <div id="morphBlack" style="position: absolute; inset: 0; background-color: #000; opacity: 0; transition: none;"></div>
+        <img id="morphBg" src="/fondo.jpeg" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transform: scale(1.1); transition: none;" alt="" />
+        <div id="morphOverlay" style="position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 60%, #060500); opacity: 0;"></div>
+      </div>
+    </div>
+
+    <!-- Video full-screen -->
+    <div style="background-color: #060500;" class="flex flex-col items-center py-16 px-4">
+      <div class="w-full max-w-5xl fade-in opacity-0 translate-y-6 transition-all duration-700" style="aspect-ratio: 16/9;">
+        <video
+          src="/videos/video-final.mp4"
+          controls
+          muted
+          loop
+          class="w-full h-full rounded-2xl"
+          style="object-fit: cover;"
+        ></video>
+      </div>
+    </div>
+
+    <!-- Final title & text -->
+    <div style="background-color: #060500;" class="flex flex-col items-center px-4 pb-32">
+      <h2 class="fade-in opacity-0 translate-y-6 transition-all duration-700 text-5xl md:text-7xl lg:text-8xl font-bold text-center mb-8" style="color: #40e0d0;">
+        Gracias por todo 
+      </h2>
+      <p class="fade-in opacity-0 translate-y-6 transition-all duration-700 text-xl md:text-2xl text-center max-w-2xl leading-relaxed" style="color: #b0d4d1;">
+        Gracias de verdad, gracias por tu abrazos, por tus sonrisas, por tus besos. Gracias por tu tiempo, gracias por los momentos buenos y los malos, gracias por estar para mí, gracias por amarme y gracias por haber compartido un pedazo de vida a mi lado. Estos dos años fueron hermosos y los voy a atesorar en lo más profundo de mi corazón, ojalá haber generado algo similar en vos porque es tan lindo esto que tuvimos que espero compartas el sentimiento. Te deseo lo mejor y que seas feliz. Gracias Ju🩵.
+      </p>
     </div>
 
     <script>
@@ -208,7 +241,90 @@ import '../styles/global.css';
         document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
       }
 
-      loadGallery();
+      // Scroll morphing
+      const morphSection = document.getElementById('morphSection') as HTMLElement;
+      const morphBlack = document.getElementById('morphBlack') as HTMLElement;
+      const morphBg = document.getElementById('morphBg') as HTMLElement;
+      const morphOverlay = document.getElementById('morphOverlay') as HTMLElement;
+      const body = document.body;
+
+      function lerp(a: number, b: number, t: number) {
+        return a + (b - a) * Math.min(Math.max(t, 0), 1);
+      }
+
+      function lerpColor(r1: number, g1: number, b1: number, r2: number, g2: number, b2: number, t: number) {
+        return `rgb(${Math.round(lerp(r1, r2, t))}, ${Math.round(lerp(g1, g2, t))}, ${Math.round(lerp(b1, b2, t))})`;
+      }
+
+      const colors = {
+        gradientStart: [13, 31, 45],
+        gradientMid: [17, 42, 58],
+        gradientEnd: [10, 25, 34],
+      };
+
+      function handleMorphScroll() {
+        const rect = morphSection.getBoundingClientRect();
+        const sectionHeight = morphSection.offsetHeight - window.innerHeight;
+        const scrolled = -rect.top;
+        const progress = Math.min(Math.max(scrolled / sectionHeight, 0), 1);
+
+        if (progress <= 0) {
+          body.style.backgroundColor = `rgb(${colors.gradientStart.join(',')})`;
+          morphBlack.style.opacity = '0';
+          morphBg.style.opacity = '0';
+          morphOverlay.style.opacity = '0';
+          return;
+        }
+
+        if (progress <= 0.35) {
+          const t = progress / 0.35;
+          body.style.backgroundColor = lerpColor(
+            colors.gradientStart[0], colors.gradientStart[1], colors.gradientStart[2],
+            0, 0, 0,
+            t
+          );
+          morphBlack.style.opacity = String(t);
+          morphBg.style.opacity = '0';
+          morphOverlay.style.opacity = '0';
+        } else if (progress <= 0.65) {
+          const t = (progress - 0.35) / 0.3;
+          body.style.backgroundColor = 'rgb(0,0,0)';
+          morphBlack.style.opacity = '1';
+          morphBg.style.opacity = String(t);
+          morphBg.style.transform = `scale(${lerp(1.1, 1, t)})`;
+          morphOverlay.style.opacity = String(t * 0.7);
+        } else {
+          body.style.backgroundColor = 'rgb(0,0,0)';
+          morphBlack.style.opacity = '1';
+          morphBg.style.opacity = '1';
+          morphBg.style.transform = 'scale(1)';
+          morphOverlay.style.opacity = '0.7';
+        }
+      }
+
+      window.addEventListener('scroll', handleMorphScroll, { passive: true });
+      handleMorphScroll();
+
+      loadGallery().then(() => {
+        document.querySelectorAll('.fade-in').forEach((el) => {
+          if (!el.classList.contains('observed')) {
+            el.classList.add('observed');
+            const obs = new IntersectionObserver(
+              (entries) => {
+                entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                    entry.target.classList.remove('opacity-0', 'translate-y-6');
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    obs.unobserve(entry.target);
+                  }
+                });
+              },
+              { threshold: 0.1 }
+            );
+            obs.observe(el);
+          }
+        });
+      });
     </script>
   </body>
 </html>

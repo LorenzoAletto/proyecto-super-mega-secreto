@@ -421,11 +421,499 @@
   },
   {
     "type":"image",
+    "src":"/fotos/recuerdo41.jpeg",
+    "alt":"Recuerdo 41",
+    "fecha":"10/12/2025",
+    "modalTitle":"Gracias por haber estado ahí",
+    "modalText":"Juro en algún momento encontrarle un lugar al cartel."
+  },
+    {
+    "type":"image",
+    "src":"/fotos/recuerdo42.jpeg",
+    "alt":"Recuerdo 42",
+    "fecha":"",
+    "modalTitle":"Awwww Juli chiquita",
+    "modalText":""
+  },{
+    "type":"image",
+    "src":"/fotos/recuerdo43.jpeg",
+    "alt":"Recuerdo 43",
+    "fecha":"",
+    "modalTitle":"AWWWWW MIRA LO QUE ES ESA BEBOTA Y ESOS OJAZOSSSS POR FAVOR ME MUERO DE AMORRRRRRRRR",
+    "modalText":""
+  },
+  {
+    "type":"image",
     "src":"/fotos/recuerdo38.jpeg",
     "alt":"Recuerdo 38",
     "fecha":"28/05/2025",
     "modalTitle":"La mejor cita romántica de la historia",
     "modalText":""
+  },
+  {
+    "type":"title",
+    "text":"La futura mejor odontologa de todas"
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo44.jpeg",
+    "alt":"Recuerdo 44",
+    "fecha":"27/06/2025",
+    "modalTitle":"",
+    "modalText":"En esta foto, tan simple, se puede ver el amor con el que vivis tu profesión, la alegría de tener tu minipaciente y las cosas me contas cuando tenías estas experiencias. Me alegro que desde tan chica te hayas dado cuenta cual es tu oficio y tu razón de crecer profesionalmente en algo tan complicado como es la salud. Sos un orgullo Juli y sin lugar a dudas vas a ser la mejor odontóloga de todas."
+  },
+  
+{
+    "type":"image",
+    "src":"/fotos/recuerdo45.jpeg",
+    "alt":"Recuerdo 45",
+    "fecha":"07/05/2026",
+    "modalTitle":"La gran dupla",
+    "modalText":"Aunque esten recontra tapadas (siguiendo correctamente los protocolos de bioseguridad) no tengo ninguna duda que en esta foto está tu compañera y mejor amiga Sele. La persona que siempre estuvo ahí y espero que así siga siendo porque individualmente ambas son brillantes y tienen un excelente futuro, pero cuando estan juntas y trabajan en equipo son imparables, no hay parcial, final ni práctica que pueda con ustedes dos. Le confío a Sele que te siga acompañando en este camino y aunque me odie por alguna razón, espero que sea muy feliz y que terminen juntas la carrera como se lo propusieron. Éxitos a ambas, no tengo dudas de que juntas lo van a lograr."
+  },
+  
+{
+    "type":"image",
+    "src":"/fotos/recuerdo46.jpeg",
+    "alt":"Recuerdo 46",
+    "fecha":"07/05/2026",
+    "modalTitle":"",
+    "modalText":"¿Qué decir de esta foto? Me acuerdo cuando me contabas lo nerviosa que estabas en tu primera práctica, el miedo y la ansiedad que tenías. Y mirate acá, parece que llevas toda la vida haciendolo, tan concentrada, tan profesional. Es imposible no ver esto y pensar que vas a ser la mejor, pero no solo porque tengas talento, sino por el enorme esfuerzo que le dedicas todos los días para ser mejor. Estoy seguro de que vas a lograr cosas increíbles."
+  },
+  {
+    "type":"title",
+    "text":"A esto yo lo llamo VENGANZA"
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo47.jpeg",
+    "alt":"Recuerdo 47",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo48.jpeg",
+    "alt":"Recuerdo 48",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo49.jpeg",
+    "alt":"Recuerdo 49",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo50.jpeg",
+    "alt":"Recuerdo 50",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo51.jpeg",
+    "alt":"Recuerdo 51",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo52.jpeg",
+    "alt":"Recuerdo 52",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo53.jpeg",
+    "alt":"Recuerdo 53",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo54.jpeg",
+    "alt":"Recuerdo 54",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo55.jpeg",
+    "alt":"Recuerdo 55",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo56.jpeg",
+    "alt":"Recuerdo 56",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo57.jpeg",
+    "alt":"Recuerdo 57",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo58.jpeg",
+    "alt":"Recuerdo 58",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo61.jpeg",
+    "alt":"Recuerdo 61",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo66.jpeg",
+    "alt":"Recuerdo 66",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo59.jpeg",
+    "alt":"Recuerdo 59",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo60.jpeg",
+    "alt":"Recuerdo 60",
+    "fecha":"",
+    "modalTitle":"",
+    "modalText":"JAJAJAJAJAJA COMO TE VAS A DORMIR ASIIIIIII POSTA PARECE QUE TE MORISTE JAJAJAJAJAJASJSJSAJKASJKASKJASJK"
+  },
+  {
+    "type":"title",
+    "text":"Mendoza y nuestro primer aniversario"
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo62.jpeg",
+    "alt":"Recuerdo 62",
+    "fecha":"02/01/2025",
+    "modalTitle":"Arrancando el viaje",
+    "modalText":"Que hermoso haber podido disfrutar de un viaje tan lindo como Mendoza. Lo voy a recordar toda la vida con mucho cariño, fuiste mi primer copiloto rutero en un viaje tan largo."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo63.jpeg",
+    "alt":"Recuerdo 63",
+    "fecha":"03/01/2025",
+    "modalTitle":"Estrellas",
+    "modalText":"Me acuerdo que pasamos un re lindo día y lo terminamos viendo el cielo lleno de estrellas. Pero yo ya conocía ese cielo brilloso y tenía el placer de verlo bastante seguido, porque para poder ver algo tan hermoso solo tenía que ver tus ojos. (naaa bueeeno soy re chamuyerooooooo)."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo64.jpeg",
+    "alt":"Recuerdo 64",
+    "fecha":"04/01/2025",
+    "modalTitle":"",
+    "modalText":"De las actividades más divertidas que hicimos. Me acuerdo que vos la pasaste re bien y eso me alegra mucho. Me guardo un montón de fotos donde parece que te estas ahogando jjsjasjas."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo67.jpeg",
+    "alt":"Recuerdo 67",
+    "fecha":"09/01/2025",
+    "modalTitle":"Borrachitos",
+    "modalText":"San Rafael. Tengo que confesar que con los poquitos vinos que probé un poco borrachito estaba ajajaja."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo68.jpeg",
+    "alt":"Recuerdo 68",
+    "fecha":"11/01/2025",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo69.jpeg",
+    "alt":"Recuerdo 69",
+    "fecha":"11/01/2025",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo70.jpeg",
+    "alt":"Recuerdo 70",
+    "fecha":"11/01/2025",
+    "modalTitle":"",
+    "modalText":"Uno de nuestros besos más aesteticcccc!"
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo71.jpeg",
+    "alt":"Recuerdo 71",
+    "fecha":"11/01/2025",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo72.jpeg",
+    "alt":"Recuerdo 72",
+    "fecha":"11/01/2025",
+    "modalTitle":"SUPER AESTETIC",
+    "modalText":"Por lo menos lo intentabamos jajaja."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo65.jpeg",
+    "alt":"Recuerdo 65",
+    "fecha":"07/01/2025",
+    "modalTitle":"PRIMER ANIVERSARIO",
+    "modalText":"Tuvimos un hermoso año lleno de amor, jamás había sentido algo como eso en toda mi vida y sabía que tenía que hacer algo especial para hacerte aunque sea un poco feliz de lo que me habías hecho a mí. Intenté planear lo mejor que pude para hacerte la sorpresa. Yo estaba re nervioso ese día, no se me ocurría qué inventar para ir a comprar las flores, no sabía si te iban a gustar, si te lo esperabas. Por suerte creo que salió bastante bien. No sé por qué no tengo el video de tu reacción :( (aunque espero siempre poder verlo en Youtube)."
+  },
+  {
+    "type":"title",
+    "text":"Comidas con Julii"
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo73.jpeg",
+    "alt":"Recuerdo 73",
+    "fecha":"02/03/2024",
+    "modalTitle":"Siempre tan contenta de que te saque fotos",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo74.jpeg",
+    "alt":"Recuerdo 74",
+    "fecha":"02/03/2024",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo75.jpeg",
+    "alt":"Recuerdo 75",
+    "fecha":"30/01/2024",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo76.jpeg",
+    "alt":"Recuerdo 76",
+    "fecha":"29/09/2024",
+    "modalTitle":"Mmmm ñoquiss",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo77.jpeg",
+    "alt":"Recuerdo 77",
+    "fecha":"26/10/2024",
+    "modalTitle":"",
+    "modalText":"Que lindas las cenas y los almuerzos que tuvimos en lo de tus tíos. Me encantaba cuando volvía de judo y ya tenías preparada la cena, eramos una pareja casada de 40 años jajaja."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo79.jpeg",
+    "alt":"Recuerdo 79",
+    "fecha":"29/01/2025",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo80.jpeg",
+    "alt":"Recuerdo 80",
+    "fecha":"14/01/2025",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo81.jpeg",
+    "alt":"Recuerdo 81",
+    "fecha":"29/09/2024",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo78.jpeg",
+    "alt":"Recuerdo 78",
+    "fecha":"03/12/2024",
+    "modalTitle":"Cumpleañitos",
+    "modalText":"Que graciosa la vela de San Lorenzo en la foto. Muchas gracias por todos los detalles <3."
+  },
+  {
+    "type":"title",
+    "text":"El 2do aniversario"
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo82.jpeg",
+    "alt":"Recuerdo 82",
+    "fecha":"07/01/2026",
+    "modalTitle":"La pareja más jodida",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo83.jpeg",
+    "alt":"Recuerdo 83",
+    "fecha":"07/01/2026",
+    "modalTitle":"",
+    "modalText":"No pude aguantar la risa."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo84.jpeg",
+    "alt":"Recuerdo 84",
+    "fecha":"07/01/2026",
+    "modalTitle":"Tranqui la cena.",
+    "modalText":"La milanesa era más o menos media Juli de tamaño."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo85.jpeg",
+    "alt":"Recuerdo 85",
+    "fecha":"07/01/2026",
+    "modalTitle":"",
+    "modalText":"Jamás te vi sonreir tanto por una milanesa con fideos."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo86.jpeg",
+    "alt":"Recuerdo 86",
+    "fecha":"07/01/2026",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo87.jpeg",
+    "alt":"Recuerdo 87",
+    "fecha":"07/01/2026",
+    "modalTitle":"Velitaaa",
+    "modalText":"🥳🥳🥳"
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo88.jpeg",
+    "alt":"Recuerdo 88",
+    "fecha":"07/01/2026",
+    "modalTitle":"Ramo de rosas",
+    "modalText":"Que alegría me dio tu reacción al ver el ramo de rosas, me encantaría volver a ese momento un millón de veces. No hay precio para esa sonrisa tan característica y genuina que tenes. El segundo año con vos estaba más enamorado que el primero, haber transitado tantas cosas juntos, tantas charlas, tantas risas, tanto tiempo. Obviamente no era todo perfecto, pero eso tambien era lo lindo de lo nuestro, porque no importaba qué pasaba entre nosotros siempre encontrabamos la forma de intentar arreglar las cosas."
+  },
+  {
+    "type":"title",
+    "text":"Cabaña Valeria del Mar"
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo89.jpeg",
+    "alt":"Recuerdo 89",
+    "fecha":"21/05/2026",
+    "modalTitle":"Rutaa",
+    "modalText":"No era muy largo el viaje, pero era nuestra primera vez en la ruta solos, mano a mano. La pasé muy bien porque se me hizo rapidísmo el viaje, entre los mates, la charla y la música el tiempo volaba. (Ya sé que la foto es de cuando volvemos, pero no tengo de cuando salimos para Valeria del Mar xd)."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo90.jpeg",
+    "alt":"Recuerdo 90",
+    "fecha":"21/05/2026",
+    "modalTitle":"Que responsable ella",
+    "modalText":"Admito que hoy en día me da bastante vergüenza que hayas pagado todo. Me queda esa culpa."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo91.jpeg",
+    "alt":"Recuerdo 91",
+    "fecha":"21/05/2026",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type": "video",
+    "src": "/videos/rvideo13.mp4",
+    "alt": "Video 13",
+    "fecha": "21/05/2026",
+    "modalTitle": "Pileta calienteee",
+    "modalText": "Lo lograste, después de tanto desearlo, pudimos estar en una pileta caliente. Estaba muy buena, debe ser la 3ra pileta caliente a la que me metía jajaja."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo92.jpeg",
+    "alt":"Recuerdo 92",
+    "fecha":"21/05/2026",
+    "modalTitle":"JACUZZI AMOOORRRSH",
+    "modalText":"El primer día estaba moooooooy bueno el Jacuzzi. Tuvimos la suerte encima de poder disfrutarlo el tiempo que quisieramos, eramos los reyes del lugar (los únicos que estaba ahí)."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo93.jpeg",
+    "alt":"Recuerdo 93",
+    "fecha":"21/05/2026",
+    "modalTitle":"",
+    "modalText":""
+  },
+  {
+    "type": "video",
+    "src": "/videos/rvideo14.mp4",
+    "alt": "Video 14",
+    "fecha": "21/05/2026",
+    "modalTitle": "SUPER VICTORIA",
+    "modalText": "Después de tantos intentos por fin logré ganarte. Esa noche estuvo muy buena, lastimosamente tenías un novio que se quiso hacer el canchero y hacer un asado con leña. Si bien el asado se demoró bastante no diría que la cena estuvo mal. Comimos unos ricos nachos con guacamole, una deliciosa ensalada de papa y tomamos unos ricos drinks. La carne se hizo desear, pero entre pelis, juegos y risas fue una noche perfecta a mi gusto."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo94.jpeg",
+    "alt":"Recuerdo 94",
+    "fecha":"22/05/2026",
+    "modalTitle":"Sanguchitos",
+    "modalText":"Nuestra comida salvadora, los sanguchitos, característico de cuando no sabemos qué comer y tampoco tenemos ganas de cocinar pero queremos que esté rico."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo95.jpeg",
+    "alt":"Recuerdo 95",
+    "fecha":"22/05/2026",
+    "modalTitle":"Mascaras coreanas",
+    "modalText":"Jajajajaj que gran idea que tuviste, no me la esperaba en lo absoluto. Fue raro, no sabría si decir relajante, pero estuvo divertido. La verdad que nuestras caras, maaamma, si nos veo en la calle me cambio de cuadra."
+  },
+  {
+    "type":"image",
+    "src":"/fotos/recuerdo96.jpeg",
+    "alt":"Recuerdo 96",
+    "fecha":"22/05/2026",
+    "modalTitle":"",
+    "modalText":""
   }
-
 ]
